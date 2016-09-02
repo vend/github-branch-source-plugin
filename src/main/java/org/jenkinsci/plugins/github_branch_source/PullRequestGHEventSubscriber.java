@@ -126,11 +126,11 @@ public class PullRequestGHEventSubscriber extends GHEventsSubscriber {
                                                 }
                                             }
 
-                                            if (!found) {
-                                                owner.onSCMSourceUpdated(gitHubSCMSource);
-                                                LOGGER.log(Level.FINE, "PR event on {0}:{1}/{2} forwarded to {3} (full onSCMSourceUpdated)", new Object[] {changedRepository.getHost(), changedRepository.getUserName(), changedRepository.getRepositoryName(), owner.getFullName()});
-                                                found = true;
-                                            }
+//                                            if (!found) {
+//                                                owner.onSCMSourceUpdated(gitHubSCMSource);
+//                                                LOGGER.log(Level.FINE, "PR event on {0}:{1}/{2} forwarded to {3} (full onSCMSourceUpdated)", new Object[] {changedRepository.getHost(), changedRepository.getUserName(), changedRepository.getRepositoryName(), owner.getFullName()});
+//                                                found = true;
+//                                            }
                                         }
                                     }
                                 }
